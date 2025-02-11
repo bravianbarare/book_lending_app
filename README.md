@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Book Library Application
 
-Things you may want to cover:
+A simple book lending library application built with Ruby on Rails 8.
 
-* Ruby version
+## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/book_library.git
+   cd book_library
 
-* System dependencies
+ ## Install dependencies:
+   bundle install
 
-* Configuration
+ ## Set up the database:
+   rails db:setup
+ 
+ ##  Start the server:
+   rails server
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   Visit http://localhost:3000 in your browser.

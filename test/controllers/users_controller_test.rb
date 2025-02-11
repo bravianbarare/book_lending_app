@@ -1,8 +1,7 @@
-require "test_helper"
+class UsersController < ApplicationController
+  before_action :authenticate_user!
 
-class UsersControllerTest < ActionDispatch::IntegrationTest
-  test "should get show" do
-    get users_show_url
-    assert_response :success
+  def show
+    @borrowed_books = current_user.borrowings.where(returned_at: nil).includes(:book)
   end
 end
